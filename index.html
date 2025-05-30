@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Waste Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navBar">
+        <div class="nav_Logo">
+          <div class="logo"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-ops" id="panel-ops">
+            <a href="Dashboard.html" target="_main ">DashBoard</a>
+            <a href="status.html" target="_main">Bin Status</a>
+            <a href="mapRoutes.html" target="_main">Map Routes</a>
+            <a href="contact.html" target="_main">Contact</a>
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Sign Up</button>
+          </div>
+        </div>
+        <a href="#" class="nav-toggle" id="toggle"><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </header>
+
+    <div class="Hero_section">
+      <div class="Hero-Image">
+        <img src="green.jpg" />
+      </div>
+    </div>
+
+    <div class="access-section">
+      <div class="box">
+        <div class="box-content">
+          <h3>Real time waste monitoring</h3>
+          <div class="box-img"></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h3>Smart bin sensors integration</h3>
+          <div class="box-img"></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h3>location based smart bins</h3>
+          <div class="box-img"></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <h3>waste collection schedule</h3>
+          <div class="box-img"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-panel">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Location</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Brand</a></li>
+        </ul>
+        <p>© copyright 2025 company.Inc</p>
+      </div>
+    </footer>
+    <script>
+        const toggleButton = document.querySelector("#toggle");
+        const panelOps = document.querySelector("#panel-ops");
+
+        toggleButton.addEventListener('click', () => {
+            panelOps.classList.toggle('active');
+        })
+    </script>
+  </body>
+</html>

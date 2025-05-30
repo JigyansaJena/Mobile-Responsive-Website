@@ -1,0 +1,230 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+body {
+    height : 100vh;
+    background : linear-gradient(#98FB98, #90EE90);
+    overflow-y: scroll;
+}
+
+.navBar {
+    height : 9rem;
+    width: 100%;
+    background-color : #EFE9F4;
+    color : black;
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    position: relative;
+}
+
+.navBar .panel a {
+    color : rgb(73, 178, 248)
+}
+
+.nav_Logo {
+    height : 7rem;
+    width : 9rem;
+    position : relative;
+    right : 4rem;
+}
+
+.logo {
+    background-image : url("smart.webp");
+    background-size : cover;
+    height : 7rem;
+    width : 9rem;
+    position: absolute;
+    left: 80px;
+    /* position : relative;
+    left : 10px */
+}
+
+.panel {
+    width : 100%;
+}    
+
+.panel-ops {
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    width: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.panel-ops .login-btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3f86e8;
+    color : #fff;
+}
+
+.panel-ops .login-btn:hover {
+    background-color: #90bdee;
+}
+
+.panel-ops .signup-btn {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid lightskyblue;
+    background-color: #e6ebf2;
+    color : rgb(73, 178, 248);
+}
+
+.panel-ops .signup-btn:hover{
+    border: 2px solid #a4d2f7;
+    background-color: #fff;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.Hero_section {
+    /* height : 100vh; */
+    display : flex;
+    justify-content : center;
+    background-color : rgb(167, 247, 167);
+    margin-top : 0.1rem;
+    overflow: hidden;
+}
+
+.Hero_section img {
+    height : 100%;
+    width : 100%; 
+    background-size : cover;
+}
+
+.access-section {
+    display : flex;
+    justify-content : space-evenly;
+    align-items : center;
+    margin-top : 0.5rem;
+    flex-wrap: wrap;
+}
+.box {
+    height : 250px;
+    width: 250px;
+    border : 1px solid black;
+    background-color : white;
+    background-size : cover;
+    border-radius: 10px;
+}
+
+.box-img {
+    height : 180px;
+    width: 180px;
+    background-image:url('waste.avif');
+    background-size: cover;
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.box-content {
+    margin-left : 10px;
+    margin-right : 10px;
+    margin-top: 10px;
+    padding : 5px;
+    object-fit: cover;
+}
+
+.box-content h3 {
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #11033cd0;
+    color : #fff;
+    margin-top: 5px;
+}
+
+.footer-panel {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width : 100%;
+    padding : 20px;
+}
+
+ul li{
+    list-style-type: none;
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color : #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        margin-right: 10px;
+    }
+    .logo {
+        position: absolute;
+        left: 60px;
+    }
+    .panel {
+        width: 100%;
+        
+    }
+    .panel-ops{
+       position: absolute;
+       flex-direction: column;
+       background-color: #EFE9F4;
+       width: 100%;
+       left: 0;
+       padding-block : 20px;
+       gap: 10px;
+       top: 100%;
+    }
+    .panel-ops.active {
+        left: 0;
+    }
+    .access-section{
+        gap: 10px;
+    }
+    .box {
+        width: 300px;
+        height: 300px;
+    }
+    .box-content {
+        object-fit: cover;
+    }
+    .footer-panel {
+        padding: 10px;
+    }
+    .box-img {
+        height: 220px;
+        width: 220px;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+    .box-content h3 {
+        font-size: 18px;
+    }
+}
